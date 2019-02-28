@@ -12,5 +12,5 @@ router.register('house', views.HouseViewSet)
 
 urlpatterns = [
     re_path(r'', include(router.urls)),
-    re_path(r'^docs/', include_docs_urls(title='House API', public=False)),
+    re_path(r'^docs/', include_docs_urls(title='House API')),
 ]
