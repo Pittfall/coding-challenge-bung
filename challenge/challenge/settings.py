@@ -126,4 +126,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-TEST_RUNNER = 'challenge_api.test_runner.PytestTestRunner'
+TEST_RUNNER = 'challenge.test_runner.PytestTestRunner'
