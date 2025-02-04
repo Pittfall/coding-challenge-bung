@@ -6,7 +6,9 @@ from . import models
 
 
 class HouseViewSet(viewsets.ModelViewSet):
-    """Creating, reading, deleting updating and replacing of a House."""
+    '''
+    Creating, reading, deleting updating and replacing of a House.
+    '''
 
     serializer_class = serializers.HouseSerializer
     queryset = models.House.objects.all()
