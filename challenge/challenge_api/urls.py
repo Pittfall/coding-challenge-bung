@@ -8,9 +8,8 @@ from . import views
 
 
 router = DefaultRouter()
-router.register('house', views.HouseViewSet)
+router.register('listing', views.ZillowListingViewSet)
 
 urlpatterns = [
     re_path(r'', include(router.urls)),
-    re_path(r'^docs/', include_docs_urls(title='House API')),
 ]

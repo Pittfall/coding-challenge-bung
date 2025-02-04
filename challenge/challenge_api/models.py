@@ -18,7 +18,7 @@ class HomeType(models.TextChoices):
     OTHER = 'Other', 'Other'
 
 
-class House(models.Model):
+class ZillowListing(models.Model):
     '''House model representation.'''
 
     id = models.BigAutoField(primary_key=True)

@@ -3,11 +3,11 @@ from rest_framework import serializers
 from . import models
 
 
-class HouseSerializer(serializers.ModelSerializer):
+class ZillowListingSerializer(serializers.ModelSerializer):
     '''
-    A serializer for House model.
+    A serializer for ZillowListing model.
     '''
 
     class Meta:
-        model = models.House
+        model = models.ZillowListing
         fields = '__all__'

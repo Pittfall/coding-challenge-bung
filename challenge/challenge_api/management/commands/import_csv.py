@@ -28,11 +28,11 @@ def clean_data(data: dict) -> dict:
 
 def create_data_from_row(row: dict) -> None:
     '''
-    Create a House object from a row of data.
+    Create a ZillowListing object from a row of data.
     '''
 
     clean_row = clean_data(row)
-    models.House.objects.get_or_create(
+    models.ZillowListing.objects.get_or_create(
         zillow_id=clean_row['zillow_id'],
         defaults=dict(
             link=clean_row['link'],

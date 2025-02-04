@@ -5,10 +5,10 @@ from . import serializers
 from . import models
 
 
-class HouseViewSet(viewsets.ModelViewSet):
+class ZillowListingViewSet(viewsets.ModelViewSet):
     '''
-    Creating, reading, deleting updating and replacing of a House.
+    Creating, reading, deleting updating and replacing of a ZillowListing.
     '''
 
-    serializer_class = serializers.HouseSerializer
-    queryset = models.House.objects.all()
+    serializer_class = serializers.ZillowListingSerializer
+    queryset = models.ZillowListing.objects.all()
