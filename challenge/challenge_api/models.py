@@ -3,7 +3,7 @@ from django.utils import timezone
 
 
 class AreaUnit(models.TextChoices):
-    SQUARE_FEET = 'sqft', 'Square Feet'
+    SQUARE_FEET = 'SqFt', 'Square Feet'
 
 
 
