@@ -1,20 +1,19 @@
-# Zillow MLS API
+# Zillow MLS
 
 A Django REST Framework (DRF) project that provides API endpoints for Zillow listings.
-
 
 ## Prerequisites
 - Python 3.7+
 - PostgreSQL
-- Virtualenv (optional but recommended)
+- Pipenv (for dependency management)
 
 ## Setup Instructions
 
-### 1. Create Virtual Environment & Install Dependencies
+### 1. Install Dependencies Using Pipenv
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+pip install pipenv
+pipenv install
+pipenv shell
 ```
 
 ### 2. Configure Database
