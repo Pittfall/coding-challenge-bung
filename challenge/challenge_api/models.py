@@ -1,3 +1,4 @@
+import uuid
 from django.db import models
 from django.utils import timezone
 
@@ -21,7 +22,7 @@ class HomeType(models.TextChoices):
 class ZillowListing(models.Model):
     '''House model representation.'''
 
-    id = models.BigAutoField(primary_key=True)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
 
     zillow_id = models.IntegerField(null=True, blank=True)
     link = models.URLField()
